@@ -15,7 +15,7 @@ stored on Google Drive in separate folder)
 | Plugin module name                |   ap_gdrive                                   |
 | Processing task:action name       |   `gdrive:processing`                         |
 
-Config file: 
+##### Config file: 
 
 > config/gdrive.yml
 
@@ -41,4 +41,30 @@ configuration parameters description:
 |   `local_store_reports`     |     Local folder tree for store converted files                 |
 
 
+##### Google API Submodule
+   All you need is initiate submodule and update him:
+   * in plugin root path
+    `git submodule init`
+    `git submodule update`
+   * in application root path
+    `git submodule update --init --recursive` - this command init and update all your submodules from application
+    
+##### Plugin module routes
+
+| Route name (from: routing.yml)    |   Module action   |   Methods         |  Parameters   |
+|-----------------------------------|:------------------|:------------------|:--------------|
+|   g_doc_prepare                   | `/ap_gdrive/init`   |   `GET` `POST`       |  Don't have parameters |
+|   g_doc_folder_tree               | `/ap_gdrive/tree/:folder` | `GET` `POST`   |   `:folder` - folders name string  |
+|   g_doc_download_file             | `/ap_gdrive/download/:id/:hash` | `GET`   |   `:id` - file id, `:hash` - string generated automatical with file information   |
+
+##### Processing file task parameters:
+
+`gdrive:processing <param> <param>`
+
+|   Parameter   |   Short alias   |   Default value   | Accept value  |   Description |
+|---------------|----------------:|:------------------|:--------------|:--------------|
+|   removeConvertedTag  |   -r  |   `false`   | `false` `true`  | Remove converted tag of previously converted files  for process repeated  |
+|   makeCopy    |   -c  |   `true`  |   `false` `true`  | Create copy of converted file on google drive in `destination_folder_name` specified in config file  |
+
+ 
 
