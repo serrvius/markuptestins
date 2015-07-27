@@ -7,7 +7,10 @@ stored on Google Drive in separate folder)
 
 #### Main components
 
-###### Config file: config/gdrive.conf 
+Config file: 
+
+> config/gdrive.conf
+
 ```yml
     client_secret_code: <google application secret code>
     client_id: <google application client id>
