@@ -7,7 +7,7 @@ stored on Google Drive in separate folder)
 
 #### Main components 
 
-|                       |                                               |
+| Type file/folder      |  File/folder place from symfony root path     |
 |-----------------------|----------------------------------------------:|
 | Config file           |   config/gdrive.yml                           |
 | Google API library    |   plugin/apGdrivePlugin/lib/vendor/google-api |
