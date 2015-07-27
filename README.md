@@ -6,6 +6,8 @@ Plugin connects to Google Drive and scans a map of new files if they are detecte
 stored on Google Drive in separate folder)
 
 #### Main components 
+
+|                       |                                               |
 |-----------------------|----------------------------------------------:|
 | Config file           |   config/gdrive.yml                           |
 | Google API library    |   plugin/apGdrivePlugin/lib/vendor/google-api |
