@@ -7,13 +7,13 @@ stored on Google Drive in separate folder)
 
 #### Main components
 
-###### Config file 
+###### Config file: config/gdrive.conf 
 ```yml
-    client_secret_code: OWbNz5JbYwsrDjE9kR4tjAC-
-    client_id: 747384071922-r5dn694mfkp5eu88i9m3kccgeh705uu8.apps.googleusercontent.com
+    client_secret_code: <google application secret code>
+    client_id: <google application client id>
 
-    source_folder_name: App/AutoPlanning/Source # / - is dorectory delimiter
-    destination_folder_name: App/AutoPlanning/Destination # / - is dorectory delimiter
+    source_folder_name: folder-1/folder-1.1/folder-1.1.1 # / - is directory delimiter
+    destination_folder_name: folder-2/folder-2.1/folder-2.1.1 # / - is directory delimiter
 
     #root path from storage is: web/uploads
     local_store_reports: /AdWords/%customerId%/%year%/%month%/ #  %customerId% , %year% and %month% - it's a system tokens
