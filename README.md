@@ -7,10 +7,14 @@ stored on Google Drive in separate folder)
 
 #### Main components 
 
-| Type file/folder      |  File/folder place from symfony root path     |
-|-----------------------|----------------------------------------------:|
-| Config file           |   config/gdrive.yml                           |
-| Google API library    |   plugin/apGdrivePlugin/lib/vendor/google-api |
+| Component type                    |  Description                                  |
+|-----------------------------------|----------------------------------------------:|
+| Config file path                  |   config/gdrive.yml                           |
+| Google API submodule library path |   plugin/apGdrivePlugin/lib/vendor/google-api |
+| File name validate pattern        |   CR Pack Visi ([\w]+-[\d]+) ([\d]+) [\S ]+   |
+| Plugin module name                |   ap_gdrive                                   |
+| Processing task:action name       |   `gdrive:processing`                         |
+
 
 
 Config file: 
