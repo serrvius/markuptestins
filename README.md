@@ -8,14 +8,12 @@ stored on Google Drive in separate folder)
 #### Main components 
 
 | Component type                    |  Description                                  |
-|-----------------------------------|----------------------------------------------:|
+|-----------------------------------|:----------------------------------------------|
 | Config file path                  |   config/gdrive.yml                           |
 | Google API submodule library path |   plugin/apGdrivePlugin/lib/vendor/google-api |
 | File name validate pattern        |   CR Pack Visi ([\w]+-[\d]+) ([\d]+) [\S ]+   |
 | Plugin module name                |   ap_gdrive                                   |
 | Processing task:action name       |   `gdrive:processing`                         |
-
-
 
 Config file: 
 
@@ -32,6 +30,15 @@ Config file:
     local_store_reports: /AdWords/%customerId%/%year%/%month%/ #  %customerId% , %year% and %month% - it's a system tokens
 ```
 
+configuration parameters description:  
+
+|   Param name                |  Description        |
+|-----------------------------|:--------------------|
+|   `client_secret_code`      |     [Google application] (https://console.developers.google.com/project) OAuth credentials client secret    |
+|   `client_id`               |     [Google application] (https://console.developers.google.com/project) OAuth credentials client id    |
+|   `source_folder_name`      |     Google Drive folder tray where is sored files               |
+|   `destination_folder_name` |     Google Drive folder tray where make a converted file copy   |
+|   `local_store_reports`     |     Local folder tree for store converted files                 |
 
 
 
