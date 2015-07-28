@@ -49,6 +49,7 @@ configuration parameters description:
    * in application root path
     `git submodule update --init --recursive` - this command init and update all your submodules from application
     
+
 ##### Plugin module routes
 
 | Route name (from: routing.yml)    |   Module action   |   Methods         |  Parameters   |
@@ -66,5 +67,8 @@ configuration parameters description:
 |   removeConvertedTag  |   -r  |   `false`   | `false` `true`  | Remove converted tag of previously converted files  for process repeated  |
 |   makeCopy    |   -c  |   `true`  |   `false` `true`  | Create copy of converted file on google drive in `destination_folder_name` specified in config file  |
 
- 
+ Example call task with parameters: `gdrive:processing -r true -c false`
 
+
+#### How enable plugin
+After installing the plugin and enable the module to be accessed from application follow to  `g_doc_prepare` link where you have 2 buttons: `Get auth code` and `Set token` (__These buttons are active until the token set__).  All you need must press the `Get auth code` then you will be redirected Google login page where the plugin will have to confirm access to your files on Google Drive. After this you will receive a Auth Code which need to be copied and pasted into the field `Generate auth code` the page where the buttons and press the `Set token`. 
