@@ -15,6 +15,13 @@ stored on Google Drive in separate folder)
 | Plugin module name                |   ap_gdrive                                   |
 | Processing task:action name       |   `gdrive:processing`                         |
 
+> **example of file name parse:**
+
+> **_Filename_**: *CR Pack Visi COR-7800 1 Autovision Versailles.pdf*
+
+> **_Result_**:   CustomerId - **`COR-7800`**, EntityId - **`1`**
+
+
 ##### Config file: 
 
 > config/gdrive.yml
